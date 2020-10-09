@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/64/64431.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./ImgGif/lightbox2-2.11.3/dist/css/lightbox.min.css">
+    <!-- <script defer src="app.js"></script> = EASY WAY -->
+    <script defer src="app2.js"></script>
+    <title>Dog Breeds Pics</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Chicle', cursive;
+        }
+
+        #containerBreed {
+            background: url(./ImgGif/bgc.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+            width: 100%;
+            height: 100vh;
+        }
+
+        #headLineCont {
+            margin-top: 3%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(to bottom right, rgb(199, 253, 199), lightgreen, lightgreen,
+                    rgb(185, 243, 185));
+            box-sizing: border-box;
+            width: 80vw;
+            margin-left: 11%;
+            border: 2px solid rgb(255, 227, 71);
+            border-radius: 100px;
+            height: 15vh;
+            font-size: 12rem;
+            color: rgb(250, 237, 185);
+            text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.8);
+            z-index: 10;
+        }
+
+        #intro {
+            background-color: rgba(219, 216, 216, 0.4);
+            border-radius: 15px;
+            margin: 0 auto;
+            width: 55%;
+            height: 50vh;
+        }
+
+        #breedNames {
+            margin: 0 auto;
+            width: 55%;
+            height: 6vh;
+            border-radius: 5px;
+            text-align: center;
+            text-align-last: center;
+            -moz-text-align-last: center;
+            font-size: 1.5rem;
+        }
+
+        #dogImgCont {
+            background: url(./ImgGif/bgc2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            margin: 0 auto;
+            padding: 20px;
+            padding-left: 5%;
+            display: none;
+        }
+
+        #dogBreedImg {
+            background: url(./img/bgc2.jpg);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 30px;
+            text-align: center;
+        }
+
+        #dogBreedImg img {
+            box-shadow: 5px 15px 10px rgba(0, 0, 0, .7);
+            border-radius: 8px;
+        }
+
+        #dogBreedImg img:hover {
+            transform: scale(1.1);
+            border: 2px solid rgb(250, 237, 185);
+        }
+    </style>
+</head>
+
+<body>
+    <div id='containerBreed'>
+        <header id="headLineCont" class="animate__animated animate__backInDown">
+            <p id="headLine" class="animate__animated animate__rubberBand animate__delay-1s">DBP - Dog Breeds Pics</p>
+        </header>
+
+        <div id='intro' class="animate__animated animate__flipInY">
+            <br>
+            <p id="introName"><span style="font-size: 4rem;">Project by : Tal Mogendorff</span>
+                <br>
+                <span style="font-size: 3rem;">Technologies : </span><span style="font-size: 2rem;">html, css,
+                    bootstrap, JavaScripit (Vanilla, es6+, oop, promises, fetch, async, object entries)</span>
+                <br>
+                <span style="font-size: 3.5rem;">Select your lovely Breed of Dog and watch maximum 6 random pictures
+                    !
+                    <br>
+                    🐶 Remember to Scroll Down to see the Result 🐶
+                </span>
+
+            </p>
+            <br>
+        </div>
+
+        <select id="breedNames" class="animate__animated animate__bounceInUp">
+            <option disabled selected value="">Select Breed</option>
+        </select>
+    </div>
+    <section id="dogImgCont">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="dogBreedImg"></div>
+        <br>
+        <br>
+    </section>
+
+
+
+
+
+    <script src="./ImgGif/lightbox2-2.11.3/dist/js/lightbox.min.js"></script>
+    <script src="./ImgGif/lightbox2-2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
